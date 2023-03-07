@@ -85,6 +85,31 @@ When I have Charles running and I didn't install its root certificates, most of 
 
 ## Remove Charles root certificates
 
+#### Internet Explorer, Chromium-based browsers
+*Tested with Chrome 110*
+
+- [ ] Windows
+  - [ ] Open the Run window <code>Win+R</code>, type <code>certmgr.msc</code> and press <code>Enter</code>. If the the root certificate was added under <code>Trusted Root Certification Authorities</code> during the root certificate installation steps, then go there and look for <code>Charles Proxy CA</code> Right-click on it and click <code>Delete</code>.
+  
+    <img width="800" src="https://user-images.githubusercontent.com/70295997/223412820-0d9426fd-0b55-42bd-af75-a4a5cefc03d3.png">
+    
+    Alternatively, go to <code>Control Panel > Internet Options > Content > Certificates > Trusted Root Certification Authorities</code>, click on <code>Charles Proxy CA</code> and click <code>Remove</code>
+
+- [ ] macOS
+  - [ ] ...
+
+#### Firefox
+*Tested with Firefox 110*
+
+
+- [ ] Windows
+  - [ ] Click the navigation drawer menu. Go to <code>Options Privacy & Security > View Certificates</code> (all the way down). Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
+  
+    <img width="800" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
+    
+- [ ] macOS
+  - [ ] ...
+
 
 
 ## No internet connection after setting manual proxy

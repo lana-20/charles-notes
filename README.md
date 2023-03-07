@@ -98,6 +98,9 @@ When I have Charles running and I didn't install its root certificates, most of 
 - [ ] macOS
   - [ ] ...
 
+    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223425947-9e8ab919-7b31-4363-98fe-5de86e2b81ee.png">
+
+
 #### Firefox
 *Tested with Firefox 110*
 

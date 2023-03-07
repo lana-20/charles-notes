@@ -79,13 +79,9 @@ When I have Charles running and I didn't install its root certificates, most of 
 
 <img width="1000" src="https://user-images.githubusercontent.com/70295997/223360167-06a80fa0-9754-4ddf-9f26-eb555d31cc82.png">
 
-<code>Your connection is not private</code> error page, as seen on Chrome 110.
+<code>Your connection is not private</code> or <code>Your connection is not secure</code> error page, as seen on Chrome 110 and Firefox 110.
 
-<img width="600" src="https://user-images.githubusercontent.com/70295997/223360467-4085e4c7-e56f-41f5-8d0d-3b95eaf60e8e.png">
-
-<code>Your connection is not secure</code> error page, as seen on Firefox xx.
-
-...
+<img width="1000" src="https://user-images.githubusercontent.com/70295997/223370290-cbd15c07-8d32-4d3a-93d0-d8948b002dbf.png">
 
 ## Remove Charles root certificates
 

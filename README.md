@@ -61,8 +61,27 @@ One way is to only start the recording after I log in. That way my login informa
 
 Alternatively, I can press <code>Ctrl+F</code> and search with some keywords like "password". I'll see something like the screenshot below. Note: I can right click on any result and click <code>Remove</code>, but it only removes that result from the search results and not from the recorded session.
 
+<img src="https://user-images.githubusercontent.com/70295997/223346635-7592ac9d-8470-44a8-a85b-d83dc51f6a8f.png" width=800>
+
+Double-click any search result to open up that particular request.
+
+<img src="https://user-images.githubusercontent.com/70295997/223347072-06cdbe9a-8ca7-42da-abbd-ac7025c93d9f.png" width=800>
+
+Once certain that it is the request with the sensitive information, right-click and select <code>Clear</code>.
+
+<img src="https://user-images.githubusercontent.com/70295997/223347252-6abc4411-f78e-4828-a8fe-84ca9535dac1.png" width=800>
+
+Repeat as necessary.
+
 ## What happens if Charles root certificate is not installed?
 
+When I have Charles running and I didn't install its root certificates, most of the sites will browse just fine. But for hosts where I have enabled SSL proxying (by going to <code>Proxy > SSL Proxy Settings...</code> and adding an entry), I'll get an error as seen in the images below.
+
+"Your connection is not private" error page, as seen on Chrome xx.
+
+...
+
+"Your connection is not secure" error page, as seen on Firefox xx.
 
 
 ## Remove Charles root certificates
@@ -75,5 +94,7 @@ Alternatively, I can press <code>Ctrl+F</code> and search with some keywords lik
 
 ## Miscellaneous issues
 
+❓ Charles is not recording network traffic on Firefox but it is working fine on Chrome and Edge.
 
+👉Go to <code>Options > Settings</code> (under Network Proxy), and make sure **Use system proxy settings** is selected. If I'm getting **Your connection is not secure** on HTTPS sites after that, I may have to visit [https://chls.pro/ssl](https://chls.pro/ssl) and select **Trust this CA to identify websites** to install the SSL certificate on Firefox.
 

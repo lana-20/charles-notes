@@ -77,12 +77,15 @@ Repeat as necessary.
 
 When I have Charles running and I didn't install its root certificates, most of the sites will browse just fine. But for hosts where I have enabled SSL proxying (by going to <code>Proxy > SSL Proxy Settings...</code> and adding an entry), I'll get an error as seen in the images below.
 
-"Your connection is not private" error page, as seen on Chrome xx.
+<img width="1000" src="https://user-images.githubusercontent.com/70295997/223360167-06a80fa0-9754-4ddf-9f26-eb555d31cc82.png">
+
+<code>Your connection is not private</code> error page, as seen on Chrome 110.
+
+<img width="600" src="https://user-images.githubusercontent.com/70295997/223360467-4085e4c7-e56f-41f5-8d0d-3b95eaf60e8e.png">
+
+<code>Your connection is not secure</code> error page, as seen on Firefox xx.
 
 ...
-
-"Your connection is not secure" error page, as seen on Firefox xx.
-
 
 ## Remove Charles root certificates
 

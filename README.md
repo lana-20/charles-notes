@@ -30,8 +30,20 @@ Each host on the Structure tab has one of these four icons (the icons in the pro
 
 ## Exclude a host from being recorded
 
+Example scenario: I have Slack Chat open in the background when recording a Charles session and I don't want that to show up in your session.
+
+Solution: go to <code>Proxy > Recording Settings > Exclude > Add</code>.
+
+Let's say I want to exclude <code>xkcd.com</code> and subdomains e.g. <code>imgs.xkcd.com</code>, then I can simply enter <code>*xkcd.com</code> in the **Host** field. For more advanced filters, click **Help** for examples/explanations.
 
 
+...
+
+Double click on any existing entry to edit it.
+
+Make sure not to exclude any host that is accessed by the website or app under test.
+
+Note: I had issues where hosts that are added to the Exclude list still show up on the session. Interestingly all the problematic ones are HTTPS hosts, whereas the HTTP hosts were excluded without issues. After some time (a few hours? a day?), the issues went away by themselves so I'm not sure what went on there.
 ## Remove a host from a recorded session
 
 

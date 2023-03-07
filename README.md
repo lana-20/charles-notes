@@ -93,12 +93,16 @@ When I have Charles running and I didn't install its root certificates, most of 
   
     <img width="800" src="https://user-images.githubusercontent.com/70295997/223412820-0d9426fd-0b55-42bd-af75-a4a5cefc03d3.png">
     
-    Alternatively, go to <code>Control Panel > Internet Options > Content > Certificates > Trusted Root Certification Authorities</code>, click on <code>Charles Proxy CA</code> and click <code>Remove</code>
+    Alternatively, go to <code>Control Panel > Internet Options > Content > Certificates > Trusted Root Certification Authorities</code>, click on <code>Charles Proxy CA</code> and click <code>Remove</code>.
 
 - [ ] macOS
   - [ ] ...
 
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223425947-9e8ab919-7b31-4363-98fe-5de86e2b81ee.png">
+
+    Alternatively, go to <code>Spotlight Search > Keychain Access > System Roots > Certificates</code>, click on <code>Charles Proxy CA</code> and click <code>Delete</code>.
+    
+    <img width="800" src="https://user-images.githubusercontent.com/70295997/223432431-2bc3b421-ddb3-4902-9e11-733560536f56.png">
 
 
 #### Firefox

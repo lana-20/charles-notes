@@ -112,10 +112,12 @@ When I have Charles running and I didn't install its root certificates, most of 
 - [ ] Windows
   - [ ] Click the navigation drawer menu. Go to <code>Options Privacy & Security > View Certificates</code> (all the way down). Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
   
-    <img width="800" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
+    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
     
 - [ ] macOS
   - [ ] ...
+
+    <img width="2048" alt="Screenshot 2023-03-07 at 6 24 59 AM" src="https://user-images.githubusercontent.com/70295997/223450834-055fe237-3896-4257-af12-dd7797a10df6.png">
 
 
 

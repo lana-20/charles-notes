@@ -120,10 +120,11 @@ When I have Charles running without having a root certificate installed, most of
   - [ ] [Firefox default directory for certificates](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox) is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
   - [ ] Alternatively, perform removal via the Firefox browser <code>Settings</code>, similar to the Windows flow illustrated above.
 
-    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223574019-b20c9bf1-4f3f-4199-8602-29209a1dd960.png">
+    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223579659-867d1a84-7996-4c05-8622-a30d0e0c3d42.png">
 
 
 ## No internet connection after setting manual proxy
+
 
 
 

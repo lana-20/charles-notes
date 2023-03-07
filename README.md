@@ -1,20 +1,20 @@
 # Notes on Charles Proxy
 
-🔵 [Structure Tab Icons]()
+🔵 [Structure Tab Icons](https://github.com/lana-20/charles-notes#structure-tab-icons)
 
-🔵 [Exclude a host from being recorded]()
+🔵 [Exclude a host from being recorded](https://github.com/lana-20/charles-notes#exclude-a-host-from-being-recorded)
 
-🔵 [Remove a host from a recorded session]()
+🔵 [Remove a host from a recorded session](https://github.com/lana-20/charles-notes#remove-a-host-from-a-recorded-session)
 
-🔵 [Remove sensitive information from a recorded session]()
+🔵 [Remove sensitive information from a recorded session](https://github.com/lana-20/charles-notes#remove-sensitive-information-from-a-recorded-session)
 
-🔵 [What happens if Charles root certificate is not installed?]()
+🔵 [What happens if Charles root certificate is not installed?](https://github.com/lana-20/charles-notes#what-happens-if-charles-root-certificate-is-not-installed)
 
-🔵 [Remove Charles root certificates]()
+🔵 [Remove Charles root certificates](https://github.com/lana-20/charles-notes#remove-charles-root-certificates)
 
-🔵 [No internet connection after setting manual proxy]()
+🔵 [No internet connection after setting manual proxy](https://github.com/lana-20/charles-notes#no-internet-connection-after-setting-manual-proxy)
 
-🔵 [Miscellaneous issues]()
+🔵 [Miscellaneous issues](https://github.com/lana-20/charles-notes#miscellaneous-issues)
 
 - <code>Structure</code> tab groups HTTP requests by host.
 - <code>Sequence</code> tab shows each HTTP request individually sorted by oldest first.
@@ -85,7 +85,7 @@ When I have Charles running and I didn't install its root certificates, most of 
 
 ## Remove Charles root certificates
 
-#### Internet Explorer, Chromium-based browsers
+#### Chromium-based browsers
 *Tested with Chrome 110*
 
 - [ ] Windows
@@ -108,17 +108,16 @@ When I have Charles running and I didn't install its root certificates, most of 
 #### Firefox
 *Tested with Firefox 110*
 
-
-- [ ] Windows
+- [ ] **Windows**
   - [ ] Click the navigation drawer menu. Go to <code>Options Privacy & Security > View Certificates</code> (all the way down). Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
   
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
     
-- [ ] macOS
-  - [ ] ...
+- [ ] **macOS**
+  - [ ] Firefox default directory for certificates is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
+  - [ ] Alternatively, perform removal via the Firefox browser <code>Settings</code>, similar to the Windows flow illustrated above.
 
-    <img width="2048" alt="Screenshot 2023-03-07 at 6 24 59 AM" src="https://user-images.githubusercontent.com/70295997/223450834-055fe237-3896-4257-af12-dd7797a10df6.png">
-
+    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223450834-055fe237-3896-4257-af12-dd7797a10df6.png">
 
 
 ## No internet connection after setting manual proxy

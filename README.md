@@ -51,7 +51,7 @@ Solution: Select the host on the Structure tab, right-click > <code>Clear</code>
 
 <img width="800" src="https://user-images.githubusercontent.com/70295997/223327698-2dd156c5-f589-47b2-b1ae-99d048d942ac.png">
 
-Make sure not to accidentally remove any host that is accessed by the website or or app under test (AUT).
+Avoid accidentally removing any host that is accessed by the website or or app under test (AUT).
 
 ## Remove sensitive information from a recorded session
 
@@ -118,7 +118,7 @@ When I have Charles running and I didn't install its root certificates, most of 
   - [ ] [Firefox default directory for certificates](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox) is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
   - [ ] Alternatively, perform removal via the Firefox browser <code>Settings</code>, similar to the Windows flow illustrated above.
 
-    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223450834-055fe237-3896-4257-af12-dd7797a10df6.png">
+    <img width="1000" src="https://user-images.githubusercontent.com/70295997/223574019-b20c9bf1-4f3f-4199-8602-29209a1dd960.png">
 
 
 ## No internet connection after setting manual proxy

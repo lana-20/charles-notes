@@ -29,7 +29,7 @@ Each host on the Structure tab has one of these four icons:
 
 ## Exclude a host from being recorded
 
-Example scenario: I have Slack Chat open in the background when recording a Charles session and I don't want that to show up in your session.
+Example scenario: I have Slack Chat open in the background when recording a Charles session and I don't want that to show up in my session.
 
 Solution: go to <code>Proxy > Recording Settings > Exclude > Add</code>.
 
@@ -37,11 +37,11 @@ Let's say I want to exclude <code>xkcd.com</code> and subdomains e.g. <code>imgs
 
 <img width="800" src="https://user-images.githubusercontent.com/70295997/223409076-1287c887-a343-42c2-8a70-66f745e9981a.png">
 
-Double click on any existing entry to edit it.
+Double-click on any existing entry to edit it.
 
-Make sure not to exclude any host that is accessed by the website or app under test (AUT).
+Avoid excluding any host that is accessed by the website or app under test (AUT).
 
-Note: I had issues where hosts that are added to the <code>Exclude</code> list still show up on the session. Interestingly, all the problematic ones are HTTPS hosts, whereas the HTTP hosts were excluded without issues. After some time (a few hours? a day?), the issues went away by themselves so I'm not sure what went on there.
+📝 I had issues where hosts that are added to the <code>Exclude</code> list still show up on the session. Curiously, all the problematic ones are HTTPS hosts, whereas the HTTP hosts were excluded without issues. After some time (in the range of a few hours, up to about a day), the issues went away by themselves so I'm not sure what happened there.
 
 ## Remove a host from a recorded session
 
@@ -59,7 +59,9 @@ Sometimes I have to use my own account to test an app or website in a cycle. It'
 
 One way is to only start the recording after I log in. That way my login information won't even show up on the recorded session in the first place.
 
-Alternatively, I can press <code>Ctrl+F</code> and search with some keywords like "password". I'll see something like the screenshot below. Note: I can right click on any result and click <code>Remove</code>, but it only removes that result from the search results and not from the recorded session.
+Alternatively, I can press <code>Ctrl+F</code> and search with some keywords like "password". I'll see something like the screenshot below. 
+
+📝 I can right-click on any result and click <code>Remove</code>, but it only removes that result from the search results and not from the recorded session.
 
 <img src="https://user-images.githubusercontent.com/70295997/223346635-7592ac9d-8470-44a8-a85b-d83dc51f6a8f.png" width=800>
 
@@ -75,7 +77,7 @@ Repeat as necessary.
 
 ## What happens if Charles root certificate is not installed?
 
-When I have Charles running and I didn't install its root certificates, most of the sites will browse just fine. But for hosts where I have enabled SSL proxying (by going to <code>Proxy > SSL Proxy Settings...</code> and adding an entry), I'll get an error as seen in the images below.
+When I have Charles running without having a root certificate installed, most of the sites will browse just fine. But for hosts where I have enabled SSL proxying (by going to <code>Proxy > SSL Proxy Settings...</code> and adding an entry), I'll get an error as seen in the images below.
 
 <img width="1000" src="https://user-images.githubusercontent.com/70295997/223410164-72a58d78-0d91-4b12-9738-018c1c7086f2.png">
 
@@ -110,7 +112,7 @@ When I have Charles running and I didn't install its root certificates, most of 
 
 - [ ] **Windows**
   - [ ] Firefox default directory for certificates is <code>%USERPROFILE%\AppData\Local\Mozilla\Certificates</code> or <code>%USERPROFILE%\AppData\Roaming\Mozilla\Certificates </code> on Windows. Locate the Charles certificate at the path, right-click on it and click <code>Delete or Distrust</code>.
-  - [ ] Alternatively, click the navigation drawer menu in the browser. Go to <code>Options Privacy & Security > View Certificates</code>. Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
+  - [ ] Alternatively, click the navigation drawer menu in the browser's top-right corner and select <code>Settings</code>. Go to <code>Privacy & Security > View Certificates > Authorities tab</code>. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
   
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
     

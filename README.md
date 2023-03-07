@@ -109,12 +109,13 @@ When I have Charles running and I didn't install its root certificates, most of 
 *Tested with Firefox 110*
 
 - [ ] **Windows**
-  - [ ] Click the navigation drawer menu. Go to <code>Options Privacy & Security > View Certificates</code> (all the way down). Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
+  - [ ] Firefox default directory for certificates is <code>%USERPROFILE%\AppData\Local\Mozilla\Certificates</code> or <code>%USERPROFILE%\AppData\Roaming\Mozilla\Certificates </code> on Windows. Locate the Charles certificate at the path, right-click on it and click <code>Delete or Distrust</code>.
+  - [ ] Alternatively, click the navigation drawer menu in the browser. Go to <code>Options Privacy & Security > View Certificates</code>. Make to be on the <code>Authorities</code> tab. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
   
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
     
 - [ ] **macOS**
-  - [ ] Firefox default directory for certificates is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
+  - [ ] [Firefox default directory for certificates](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox) is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
   - [ ] Alternatively, perform removal via the Firefox browser <code>Settings</code>, similar to the Windows flow illustrated above.
 
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223450834-055fe237-3896-4257-af12-dd7797a10df6.png">

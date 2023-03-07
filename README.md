@@ -1,6 +1,5 @@
 # Notes on Charles Proxy
 
-
 🔵 [Structure Tab Icons]()
 
 🔵 [Exclude a host from being recorded]()
@@ -36,8 +35,7 @@ Solution: go to <code>Proxy > Recording Settings > Exclude > Add</code>.
 
 Let's say I want to exclude <code>xkcd.com</code> and subdomains e.g. <code>imgs.xkcd.com</code>, then I can simply enter <code>*xkcd.com</code> in the **Host** field. For more advanced filters, click **Help** for examples/explanations.
 
-
-...
+<img width="800" src="https://user-images.githubusercontent.com/70295997/223326969-43cc76a9-2aca-4432-ab2c-09b490f47b67.png">
 
 Double click on any existing entry to edit it.
 

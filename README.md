@@ -35,7 +35,7 @@ Solution: go to <code>Proxy > Recording Settings > Exclude > Add</code>.
 
 Let's say I want to exclude <code>xkcd.com</code> and subdomains e.g. <code>imgs.xkcd.com</code>, then I can simply enter <code>*xkcd.com</code> in the **Host** field. For more advanced filters, click **Help** for examples/explanations.
 
-<img width="800" src="https://user-images.githubusercontent.com/70295997/223326969-43cc76a9-2aca-4432-ab2c-09b490f47b67.png">
+<img width="800" src="https://user-images.githubusercontent.com/70295997/223409076-1287c887-a343-42c2-8a70-66f745e9981a.png">
 
 Double click on any existing entry to edit it.
 
@@ -77,7 +77,7 @@ Repeat as necessary.
 
 When I have Charles running and I didn't install its root certificates, most of the sites will browse just fine. But for hosts where I have enabled SSL proxying (by going to <code>Proxy > SSL Proxy Settings...</code> and adding an entry), I'll get an error as seen in the images below.
 
-<img width="1000" src="https://user-images.githubusercontent.com/70295997/223360167-06a80fa0-9754-4ddf-9f26-eb555d31cc82.png">
+<img width="1000" src="https://user-images.githubusercontent.com/70295997/223410164-72a58d78-0d91-4b12-9738-018c1c7086f2.png">
 
 <code>Your connection is not private</code> or <code>Did Not Connect: Potential Security Issue</code> error page, as seen on Chrome 110 and Firefox 110.
 

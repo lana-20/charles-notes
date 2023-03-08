@@ -125,7 +125,12 @@ When I have Charles running without having a root certificate installed, most of
 
 ## No internet connection after setting manual proxy
 
+### Scenario:
+I set the manual proxy on my phone to the computer running Charles. When I try to browse a website on the phone, I expect to see a prompt on Charles about an unauthorized device trying to connect. But I don't see that prompt, and my phone appears to have no internet connection. Even after manually adding the phone's local IP to <code>Proxy > Access Control Settings</code>, there is still no internet access on my phone and Charles is not recording any network activity on the phone.
 
+### Solution:
+
+...
 
 
 ## Miscellaneous issues

@@ -111,12 +111,15 @@ When I have Charles running without having a root certificate installed, most of
 
 - [ ] **Windows**
   - [ ] Firefox default directory for certificates is <code>%USERPROFILE%\AppData\Local\Mozilla\Certificates</code> or <code>%USERPROFILE%\AppData\Roaming\Mozilla\Certificates </code> on Windows. Locate the Charles certificate at the path, right-click on it and click <code>Delete or Distrust</code>.
-  - [ ] Alternatively, click the navigation drawer menu in the browser's top-right corner and select <code>Settings</code>. Go to <code>Privacy & Security > View Certificates > Authorities tab</code>. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
+  - [ ] Alternatively, click the navigation drawer menu in the browser's top-right corner and select <code>Settings</code>. Go to <code>Options > Privacy & Security > View Certificates > Authorities tab</code>. Scroll down to <code>XK72Ltd</code>, click <code>Charles Proxy CA</code>, click <code>Delete or Distrust</code> and click <code>OK</code>.
   
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223414802-09c33ce2-b3d5-4019-ac0a-925972c90994.png">
     
 - [ ] **macOS**
-  - [ ] [Firefox default directory for certificates](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox) is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Delete or Distrust</code>.
+  - [ ] [Firefox default directory for certificates](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox) is <code>~/Library/Application Support/Mozilla/Certificates</code> on macOS. Locate the Charles certificate at this path, right-click on it and click <code>Move to Trash</code>.
+  
+    <img width="600" src="https://user-images.githubusercontent.com/70295997/223615601-4ea52929-2c49-4584-a0f0-972391a0d207.png">
+
   - [ ] Alternatively, perform removal via the Firefox browser <code>Settings</code>, similar to the Windows flow illustrated above.
 
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223579659-867d1a84-7996-4c05-8622-a30d0e0c3d42.png">

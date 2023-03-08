@@ -87,7 +87,7 @@ When I have Charles running without having a root certificate installed, most of
 
 ## Remove Charles root certificates
 
-#### Chromium-based browsers
+#### ✰ Chromium-based browsers
 *Tested with Chrome 110*
 
 - [ ] Windows
@@ -106,8 +106,7 @@ When I have Charles running without having a root certificate installed, most of
     
     <img width="800" src="https://user-images.githubusercontent.com/70295997/223432431-2bc3b421-ddb3-4902-9e11-733560536f56.png">
 
-
-#### Firefox
+#### ✰ Firefox
 *Tested with Firefox 110*
 
 - [ ] **Windows**
@@ -122,16 +121,27 @@ When I have Charles running without having a root certificate installed, most of
 
     <img width="1000" src="https://user-images.githubusercontent.com/70295997/223579659-867d1a84-7996-4c05-8622-a30d0e0c3d42.png">
 
+#### ✰ Android 13
+
+Go to Settings. Search "certificates" and tap <code>Trusted credentials</code>. Go to <code>User</code> tab and look for root certificate with words like:
+
+    XK72 Ltd.
+    Charles Proxy CA
+
+Tap on the certificate and tap <code>Remove</code>.
 
 ## No internet connection after setting manual proxy
 
-### Scenario:
-I set the manual proxy on my phone to the computer running Charles. When I try to browse a website on the phone, I expect to see a prompt on Charles about an unauthorized device trying to connect. But I don't see that prompt, and my phone appears to have no internet connection. Even after manually adding the phone's local IP to <code>Proxy > Access Control Settings</code>, there is still no internet access on my phone and Charles is not recording any network activity on the phone.
+### Scenario (Windows 10):
+I set the manual proxy on my phone to the computer running Charles. When I try to browse a website on the phone, I expect to see a prompt on Charles about an unauthorized device trying to connect, as per the [Charles documentation](https://www.charlesproxy.com/documentation/configuration/access-control/). But I don't see that prompt, and my phone appears to have no internet connection. Even after manually adding the phone's local IP to <code>Proxy > Access Control Settings</code>, there is still no internet access on my phone and Charles is not recording any network activity on the phone.
 
 ### Solution:
 
-...
+1. Open Start. Type "network status" and click the matching item.
+2. Click <code>Change connection properties</code>.
+3. Under <code>Network Profile</code>, select <code>Private</code>(it was originally set to <code>Public</code>).
 
+Charles may need be restarted. Fiddler, however, works fine without having to change the <code>Network Profile</code> to <code>Private</code>
 
 ## Miscellaneous issues
 

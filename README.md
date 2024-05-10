@@ -1,3 +1,6 @@
+**NOTE**: This repo has been refurbushed and published on Medium: https://medium.com/@begunova/charles-proxy-setup-for-desktops-and-mobile-devices-03c3fd28f882.
+
+
 # Notes on Charles Proxy
 
 🔵 [Structure Tab Icons](https://github.com/lana-20/charles-notes#structure-tab-icons)
